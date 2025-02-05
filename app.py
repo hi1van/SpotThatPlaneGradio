@@ -2,7 +2,7 @@ import gradio as gr
 from fastai.vision.all import *
 import skimage
 
-learn = load_learner('export.pkl')
+learn = load_learner('model.pkl')
 
 labels = learn.dls.vocab
 def predict(img):
