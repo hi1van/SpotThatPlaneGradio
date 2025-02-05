@@ -1,6 +1,5 @@
 import gradio as gr
 from fastai.vision.all import *
-import skimage
 
 learn = load_learner('model.pkl')
 
