@@ -12,7 +12,6 @@ def predict(img):
 title = "Spot that Plane"
 description = "A plane model classifier trained with fastai. Created as a demo for Gradio and HuggingFace Spaces."
 examples = []
-interpretation='default'
 enable_queue=True
 
-gr.Interface(fn=predict,inputs=gr.Image(type="pil"),outputs=gr.Label(num_top_classes=3),title=title,description=description,examples=examples,interpretation=interpretation,enable_queue=enable_queue).launch()
+gr.Interface(fn=predict,inputs=gr.Image(type="pil"),outputs=gr.Label(num_top_classes=3),title=title,description=description,examples=examples,enable_queue=enable_queue).launch()
